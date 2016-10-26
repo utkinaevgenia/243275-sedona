@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Каталог гостиниц</title>
+</head>
+<body>
+  <div class="main-container">
+    <header class="main-header">
+        <div class="container">
+          <nav class="main-navigation">
+            <ul>
+              <li> 
+                <a href="#">Информация </a>
+              </li>
+              <li> 
+                <a href="#">Фото и Видео</a>
+              </li>
+            </ul>
+            <div class="main-logo">
+              <a href="#"> <img class="logo" src="#"></a>
+            </div>
+            <ul>
+              <li> 
+                <a href="#">Карта штата</a> 
+              </li>
+              <li> 
+                <a href="#">Гостиницы</a>
+              </li>
+          </nav>
+        </div>
+    </header>
+    <main>
+      <div class="main-condition">
+        <div class="infrastructure">
+          <p> Инфраструктура: </p>
+          <label class="infrastructure bass">
+            <input type="checkbox" name="bass" checked> Бассейн
+          </label>
+          <label class="infrastructure parking">
+            <input type="checkbox" name="parking"> Парковка
+          </label>
+          <label class="infrastructure wf">
+            <input type="checkbox" name="wf"> Wi-Fi
+          </label>
+        </div>
+        <div class="accommodation">
+          <p> Тип жилья: </p>
+          <label class="accommodation hotel">
+            <input type="checkbox" name="hotel" checked> Гостиница
+          </label>
+          <label class="accommodation motel">
+            <input type="checkbox" name="motel" checked> Мотель
+          </label>
+          <label class="accommodation apartment">
+            <input type="checkbox" name="apartment" checked> Апартаменты
+          </label>
+        </div>
+        <div class="price">
+          <p class="price-day"> Стоимость в сутки (р):</p>
+          <table class="price-range">
+            <tr>
+              <td> От 0</td>
+              <td> До 3000</td>
+            </tr>
+          </table>
+          <input type="range" min="0" max="3000">
+          <button class="price-show" type="submit"> Показать </button>
+        </div>
+        <div class="filter">
+          <p class="find">Найдено: 3</p>
+          <div class="sort">Сортировка: </div>
+            <ul class="filter-sort">
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По рейтингу</li>
+            </ul>
+        </div>
+        <section class="hotels">
+          <div class="find-hotel">
+            <img src="#" width="150" height="150">
+              <div class="hotel-character">
+                <b>Amara resort & spa</b>
+                <p> Гостиница</p>
+                <p> от 3500 р.</p>
+                <button class="about" type="submit">Подробнее</button>
+                <button class="booking" type="submit">Забронировать</button>
+              </div>
+          </div>
+          <div class="find-hotel">
+            <img src="#" width="150" height="150">
+              <div class="hotel-character">
+                <b>Desert quail inn</b>
+                <p> Мотель</p>
+                <p> от 2000 р.</p>
+                <button class="about" type="submit">Подробнее</button>
+                <button class="booking" type="submit">Забронировать</button>
+              </div>
+          </div>
+          <div class="find-hotel">
+            <img src="#" width="150" height="150">
+              <div class="hotel-character">
+                <b>Villas at poco diablo</b>
+                <p> Апартаменты</p>
+                <p> от 4000 р.</p>
+                <button class="about" type="submit">Подробнее</button>
+                <button class="booking" type="submit">Забронировать</button>
+              </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer floor">
+      <div class="container">
+        <section class="footer-contacts">
+          <a href="#">#VISITSEDONA</a>
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-twit" href="#">Twitter</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+           <a class="social-btn social-btn-ytube" href="#">YouTube</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Website by</p>
+          <a class="copyright" href="#"> <img src="img/logo-html.png"></a>
+        </section>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
