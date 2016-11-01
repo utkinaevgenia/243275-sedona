@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link href="css/inner-style.css" rel="stylesheet">
   <title>Каталог гостиниц</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <a href="#">Фото и Видео</a>
           </li>
           <li class="main-logo">
-            <a href="#"> <img class="logo" src="#"></a>
+            <a href="#"><img class="logo" src="img/icon.png" width="138" height="70" alt="Седона"></a>
           </li>
           <li> 
             <a href="#">Карта штата</a> 
@@ -24,6 +25,7 @@
           <li> 
             <a href="#">Гостиницы</a>
           </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -55,8 +57,12 @@
         <div class="price">
           <h2>Стоимость в сутки (р):</h2>
           <div class="price-range">
-            <span>От 0</span>
-            <span>До 3000</span>
+            <label>От 0
+              <input type="text" name="price-min">
+            </label>
+            <label>До 3000
+              <input type="text" name="price-max">
+            </label>
           </div>
           <div class="range">
             <div class="range-active">
@@ -70,17 +76,17 @@
           <span class="find">Найдено: 3</span>
           <div class="sort">Сортировка:
             <ul class="filter-sort">
-              <li> <a class="active" href="#">По цене</a> </li>
-              <li> <a href="#"> По типу</a> </li>
-              <li> <a href="#"> По рейтингу</a> </li>
+              <li> <a class="active" href="#">По цене</a></li>
+              <li> <a href="#"> По типу</a></li>
+              <li> <a href="#"> По рейтингу</a></li>
             </ul>
           </div>
-          <div class="direction-filter up"> <a href="#">вверх</a></div>
-          <div class="direction-filter down"> <a : active href="#"> вниз</a> </div>
+          <div class="direction-filter up"><a href="#">вверх</a></div>
+          <div class="direction-filter down"><a class="active" href="#"> вниз</a></div>
         </div>
         <section class="hotels-list">
           <div class="hotel">
-            <img src="#" width="150" height="150">
+            <img src="img/inner-amara.png" width="135" height="90">
             <div class="hotel-character">
               <h2>Amara resort & spa</h2>
               <span>Гостиница</span>
@@ -89,12 +95,17 @@
               <a class="booking">Забронировать</a>
             </div>
             <div class="rating">
-              <div class="star">4</div>
+              <div class="star">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+                <span class="four"></span>
+              </div>
               <div class="rating number">Рейтинг: 8,5</div>
             </div>
           </div>
           <div class="hotel">
-            <img src="#" width="150" height="150">
+            <img src="img/inner-desert.png" width="135" height="90">
             <div class="hotel-character">
               <h2>Desert quail inn</h2>
               <span> Мотель</span>
@@ -103,12 +114,15 @@
               <a class="booking">Забронировать</a>
             </div>
             <div class="rating">
-              <div class="star">2</div>
+              <div class="star">
+                <span class="one"></span>
+                <span class="two"></span>
+              </div>
               <div class="rating number">Рейтинг: 8,9</div>
             </div>
           </div>
           <div class="hotel">
-            <img src="#" width="150" height="150">
+            <img src="img/villas.png" width="135" height="90">
             <div class="hotel-character">
               <h2>Villas at poco diablo</h2>
               <span> Апартаменты</span>
@@ -117,7 +131,11 @@
               <a class="booking" type="submit">Забронировать</a>
             </div>
             <div class="rating">
-              <div class="star">3</div>
+              <div class="star">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+              </div>
               <div class="rating number">Рейтинг: 9,2</div>
             </div>
           </div>
@@ -135,7 +153,7 @@
       </section>
       <section class="footer-copyright">
         <p>Website by</p>
-        <a class="copyright" href="#"> <img src="img/logo-html.png"></a>
+        <a class="copyright" href="#"><img src="img/htmlacad.png" width="113" height="39" alt="htmlacademy"></a>
       </section>
     </footer>
   </div>

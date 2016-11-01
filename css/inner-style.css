@@ -1,0 +1,31 @@
+.body {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+	font-weight: : Regular;
+	font-family: PTSans;
+}
+.common-filter h2 {
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	font-weight: : Bold;
+	font-family: PTSans;
+	text-transform: uppercase;
+}
+.price h2 {
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	font-weight: : Bold;
+	font-family: PTSans;
+	text-transform: uppercase;
+}
+.hotel-character h2 {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: : Bold;
+	font-family: PTSans;
+	text-transform: uppercase;
+}
