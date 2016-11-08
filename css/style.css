@@ -5,6 +5,7 @@ body {
 	font-weight: normal;
 	font-family: "PTSans", "Arial", sans-serif;
 	text-transform: uppercase;
+	background-color: #f2f2f2;
 }
 h2.offer-title {
 	font-size: 21px;
@@ -35,8 +36,8 @@ h1.logo-title {
 	font-weight: bold;
 }
 .main-container {
-	width: 100%;
-	background-color: #f2f2f2;
+	width: 1200px;
+	margin: 0 auto;
 }
 
 .main-header {
@@ -81,9 +82,9 @@ h1.logo-title {
 	margin: 0 auto;
 }
 .clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 .find {
 	float: left;
@@ -129,32 +130,83 @@ h1.logo-title {
 } 
 
 .main-footer {
-  width: 1080px;
-  margin: 0 auto;
-  background: #fefefe;
-  padding: 30px 60px;
+	width: 1080px;
+	margin: 0 auto;
+	background: #fefefe;
+	padding: 30px 60px;
 }
 
 .footer-contacts {
-  float: left;
-  width: 280px;
-  margin-right: 120px;
-  min-height: 60px;
+	float: left;
+	width: 280px;
+	margin-right: 120px;
+	min-height: 60px;
 }
 
 .footer-social {
-  float: left;
-  width: 280px;
-  min-height: 60px;
+	float: left;
+	width: 280px;
+	min-height: 60px;
 }
 
 .footer-copyright {
-  float: right;
-  width: 280px;
-  min-height: 60px;
-  margin-left: 120px;
+	float: right;
+	width: 280px;
+	min-height: 60px;
+	margin-left: 120px;
 }
 .main {
 	width: 1200px;
 	margin: 0 auto;
+}
+.features-items {
+	background-color: #81b3d2;
+	min-height: 256px;
+}
+.features-items.right img {
+	float: right;
+	width: 800px;
+}
+.features-logo {
+	float: left;
+	width: 280px;
+	min-height: 240px;
+	padding: 40px 60px;
+}
+.features-items.left img {
+	float: left;
+	width: 800px;
+}
+.features-items-small {
+	float: left;
+	width: 280px;
+	min-height: 175px;
+	padding: 40px 60px;
+	background-color: #eeeeee
+}
+.offer {
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+label.search {
+	display: block;
+	height: 85px;
+	width: 568px;
+	margin: 0 auto;
+}
+#search-hotel:checked ~ label.search[for="search-hotel"] { 
+	background:#c1c1c1;
+}
+
+.offer-form {
+	width: 565px;
+	height: 395px;
+	margin: 0 auto;
+	display: none;
+}
+#search-hotel:checked ~ .offer-form {
+	display: block;
+}
+input.offer {
+	display: none;
 }
