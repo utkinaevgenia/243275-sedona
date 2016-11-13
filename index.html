@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Welcome to Sedona</title>
@@ -36,58 +36,58 @@
           <img src="img/index-intro.jpg" width="1200" height="780" alt="Welcome to Sedona">
         </div>
         <h1 class="logo-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="features-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <section class="features">
-        <p class="features-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <div class="features-items right">
           <img src="img/index-city.jpg" width="800" height="256" alt="Настоящий городок">
-          <p class="features-name">Настоящий городок</p>
+          <p class="features-name">Настоящий <br> городок</p>
           <p class="features">-№1-</p>
-          <p class="features">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <p class="features">Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
         </div>
         <div class="features-logo-wrapped clearfix">
           <div class="features-logo accomodation">
             <p class="features-logo-name">Жилье</p>
-            <p class="features">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p class="feature">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="features-logo food">
             <p class="features-logo-name">Еда</p>
-            <p class="features">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <p class="feature">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </div>
           <div class="features-logo souvenirs">
             <p class="features-logo-name">Сувениры</p>
-            <p class="features">Не только китайского, но и местного производства!</p>
+            <p class="feature">Не только китайского, но и местного производства!</p>
           </div>
         </div>
         <div class="features-items left">
           <img src="img/index-bridge.jpg" width="800" height="256" alt="Мост дьявола">
-          <p class="features-name">Там есть мост дьявола</p>
+          <p class="features-name">Там есть <br> мост дьявола</p>
           <p class="features">-№2-</p>
-          <p class="features">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <p class="features">Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p>
         </div>
         <div class="features-items-common clearfix">
           <div class="features-items-small">
-            <p class="features-name">Небольшая площадь</p>
-            <p class="features">-№3-</p>
-            <p class="features">Все достопримечательности находятся очень близко</p>
+            <p class="features-name">Небольшая <br> площадь</p>
+            <p class="feature">-№3-</p>
+            <p class="feature">Все достопримечательности находятся очень близко</p>
           </div>
           <div class="features-items-small">
-            <p class="features-name">Красивая дорога</p>
-            <p class="features">-№4-</p>
-            <p class="features">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="features-name">Красивая <br> дорога</p>
+            <p class="feature">-№4-</p>
+            <p class="feature">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="features-items-small">
-            <p class="features-name">Мало туристов</p>
-            <p class="features">-№5-</p>
-            <p class="features">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="features-name">Мало <br> туристов</p>
+            <p class="feature">-№5-</p>
+            <p class="feature">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
       </section>
       <div class="offer">
         <h2 class="offer-title">Заинтересовались?</h2>
-        <p class="offer-name">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="offer-name">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <input type="checkbox" class="offer" id="search-hotel">
-        <label class="search" for="search-hotel">Поиск гостиниц в Седоне</label>
+        <label class="search" for="search-hotel">Поиск гостиницы в Седоне</label>
         <form class="offer-form" action="#" method="get">
           <label class="date"> Дата заезда:
             <input class="date" type="date" name="date-checkin" placeholder="24 апреля 2016">
@@ -95,17 +95,19 @@
           <label class="date"> Дата выезда:
             <input class="date" type="date" name="date-checkout" placeholder="4 июля 2016">
           </label>
-          <label class="adult">Взрослые
-            <button class="minus" type="button">-</button>
-            <input type="text" name="quantity-adult">
-            <button class="plus" type="button">+</button>
-          </label>
-          <label class="children">Дети
-            <button class="minus" type="button">-</button>
-            <input type="text" name="quantity-children">
-            <button class="plus" type="button">+</button>
-          </label>
-          <button type="submit"> Найти </button>
+          <div class="group clearfix">
+            <label class="adult">Взрослые
+              <button class="minus" type="button">-</button>
+              <input type="text" name="quantity-adult">
+              <button class="plus" type="button">+</button>
+            </label>
+            <label class="children">Дети
+              <button class="minus" type="button">-</button>
+              <input type="text" name="quantity-children">
+              <button class="plus" type="button">+</button>
+            </label>
+          </div>
+          <button class="submit" type="submit">Найти</button>
         </form>
       </div>
       <div class="map">
