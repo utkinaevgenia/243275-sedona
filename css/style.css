@@ -1,9 +1,9 @@
 body {
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 1.5;
 	color: #000000;
 	font-weight: normal;
-	font-family: "PTSans", "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
@@ -24,7 +24,7 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
-	padding: 15px;
+	padding: 15px 20px;
 	margin: 0 50px;
 }
 .main-navigation li:nth-child(3) {
@@ -32,7 +32,8 @@ body {
 	vertical-align: top;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	margin: 0px;
+	margin-right: : 50px;
+	margin-left: 50px;
 	margin-bottom: -25px;
 	z-index: 100;
 }
@@ -50,20 +51,23 @@ body {
 	list-style: none;
 	font-size: 0;
 }
+.main-logo img {
+	display: block;
+}
 .main-footer {
 	width: 1080px;
 	margin: 0 auto;
 	background: #fefefe;
-	padding: 30px 60px;
+	padding: 35px 60px;
 	border-top: 1px solid #e5e5e5
 }
 
 .footer-contacts {
 	float: left;
-	width: 210px;
-	margin-right: 120px;
-	min-height: 60px;
+	width: 220px;
+	margin-right: 170px;
 	margin-left: 70px;
+	padding-top: 15px;
 }
 .footer-contacts a {
 	text-decoration: none;
@@ -75,8 +79,7 @@ body {
 
 .footer-social {
 	float: left;
-	width: 280px;
-	min-height: 60px;
+	width: 220px;
 }
 
 .social-btn {
@@ -119,16 +122,16 @@ body {
 
 .footer-copyright {
 	float: right;
-	width: 280px;
-	min-height: 60px;
-	margin-left: 120px;
+	padding-top: 15px;
+	width: 220px;
+	margin-right: 40px;
 	position: relative;
 }
-.footer-copyright::after {
+.footer-copyright a::after {
 	content: "";
 	position: absolute;
-	top: -20%;
-	left: 35%;
+	top: 10%;
+	left: calc(30% + 15px);
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	display: block;
@@ -136,11 +139,11 @@ body {
 	height: 39px;
 	background-position: -5px -191px;
 }
-.footer-copyright:hover::after {
+.footer-copyright a:hover::after {
 	content: "";
 	position: absolute;
-	top: -20%;
-	left: 35%;
+	top: 10%;
+	left: calc(30% + 15px);
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	display: block;
@@ -165,10 +168,11 @@ body {
 	line-height: 1.3;
 	color: #ffffff;
 	font-weight: bold;
+	margin-top: 0;
 }
 .hotel-character h2 { 
 	font-size: 21px;
-	line-height: 1.2;
+	line-height: 26px;
 	font-weight: bold;
 	margin: 0px;
 }
@@ -238,7 +242,96 @@ input[type="checkbox"]:checked + label.choice::before {
 .price {
 	float: right;
 	width: 350px;
-	padding: 30px 60px;
+	padding: 30px 70px;
+}
+.price-range {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+.price-range::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
+}
+.price-range label {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 38px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.price-range .min-price,
+.price-range .max-price {
+	width: 90px;
+	padding-left: 65px;
+}
+.price-range input {
+	width: 50px;
+	margin: 0;
+	border: none;
+	outline: none;
+	background: none;
+	color: inherit;
+	font: inherit;
+}
+.range-controls {
+	position: relative;
+	margin-bottom: 32px;
+}
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+}
+.range-circle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+.range-circle:hover {
+	background: #1c4f80;
+}
+.range-circle-min {
+	left: 0;
+}
+.range-circle-max {
+	left: 80%;
+}
+button.price-show {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+button.price-show:hover {
+	color: #000000;
+	background: #ffffff;
 }
 .filter {
 	background: #fefefe;
@@ -287,17 +380,21 @@ ul.filter-sort {
 .filter-sort a {
 	text-decoration: none;
 	color: #b1b1b1;
-	border-bottom: 1px dashed #81b3d2;
 }
 .filter-sort a.active {
 	color: #81b3d2;
 	text-decoration: none;
-	border-bottom: 0px;
+	border-bottom: none;
 }
 .filter-sort a:hover {
 	color: #81b3d2;
 	text-decoration: none;
 	border-bottom: 1px dashed #81b3d2;
+}
+.filter-sort a.active:hover {
+	color: #81b3d2;
+	text-decoration: none;
+	border-bottom: 0px;
 }
 .direction-filter {
 	float: right;
@@ -320,6 +417,9 @@ a.direction-filter {
 	border: 6px solid transparent;
 	border-bottom: 10px solid #cccccc;
 }
+.direction-filter.up::after:hover {
+	border-bottom: 10px solid #000000;
+}
 .direction-filter.down::after {
 	content: "";
 	position: absolute;
@@ -327,23 +427,28 @@ a.direction-filter {
 	border: 6px solid transparent;
 	border-top: 10px solid #cccccc;
 }
-.direction-filter.active::after { /*не работает. не пойму как сделать активную сортировку*/
+.direction-filter.active::after {
 	border-top: 10px solid #81b3d2;
 }
-.rating.number {
+.rating {
 	float: right;
+}
+.rating.number {
 	border: 1px solid #f2f2f2;
 	background-color: #f2f2f2;
 	color: #666666;
-	margin-top: 70px;
+	margin-top: 45px;
 }
 .hotels-list {
 	min-height: 450px;
 	background: #fefefe;
 }
+.btn {
+	margin-top: 10px;
+}
 .hotel {
-	width: 1080px;
-	padding: 30px 60px;
+	width: 1060px;
+	padding: 30px 70px;
 }
 .hotel img {
 	float: left;
@@ -361,31 +466,44 @@ a.direction-filter {
 	padding-top: 10px;
 	padding-right: 35px;
 }
-.btn {
-	margin-top: 10px;
-}
 .hotel-character a.about {
 	display: inline-block;
-	height: 26px;
 	width: 110px;
 	border: 1px solid #81b3d2;
 	background-color: #81b3d2;
 	color: #ffffff;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+.hotel-character a.about:hover {
+	background-color: #669ec0;
 }
 .hotel-character a.booking {
 	display: inline-block;
-	height: 26px;
 	width: 142px;
 	border: 1px solid #766357;
 	background-color: #766357;
 	color: #ffffff;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	vertical-align: bottom;
 }
+.hotel-character a.booking:hover {
+	background-color: #604e43;
+}
+.star span {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url("../img/star.png") no-repeat;
+}
+
 
 
 /*index*/
@@ -563,6 +681,18 @@ input.offer {
 .map {
 	position: relative;
 }
+.map img {
+	display: block;
+}
+.group {
+	width: 465px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.group button:hover {
+	color: #000000;
+
+}
 label.date {
 	display: block;
 	width: 465px;
@@ -575,7 +705,7 @@ label.adult {
 	display: block;
 	float: left;
 	width: 240px;
-	padding-right: 30px;
+	padding-right: 25px;
 	font-weight: bold;
 	line-height: 26px;
 }
@@ -586,12 +716,6 @@ label.children {
 	font-weight: bold;
 	line-height: 26px;
 }
-.group {
-	width: 465px;
-	margin: 0 auto;
-	padding-top: 30px;
-}
-
 button.submit {
 	display: block;
 	margin: 55px auto;
@@ -606,27 +730,40 @@ button.submit {
 	border: none;
 	cursor: pointer;
 }
+button.submit:hover {
+	background-color: #669ec0;
+}
 input.date {
 	width: 330px;
 	height: 38px;
-	background-color: #f2f2f2;
+	background: #f2f2f2 url("../img/calculate.png") no-repeat 97% center;
 	border: none;
 	margin-left: 15px;
-	font-size: 
+	line-height: 26px;
+	font-weight: bold;
+}
+input.date:hover {
+	background: #ebebeb url("../img/calculate-hover.png") no-repeat 97% center;
 }
 .adult input {
 	width: 38px;
 	height: 38px;
+	line-height: 26px;
+	font-weight: bold;
 	background-color: #f2f2f2;
 	border: none;
 	padding: 0px;
+	text-align: center;
 }
 .children input {
 	width: 38px;
 	height: 38px;
+	font-weight: bold;
+	line-height: 26px;
 	background-color: #f2f2f2;
 	border: none;
 	padding: 0px;
+	text-align: center;
 }
 button.minus, button.plus {
 	width: 38px;
@@ -640,11 +777,17 @@ button.minus, button.plus {
 	font-weight: bold;
 	color: #a9a9a9;
 }
+button.minus {
+	margin-right: -4px;
+}
+button.plus {
+	margin-left: -4px;
+}
 .adult button.minus {
-	margin-left: 30px;
+	margin-left: 35px;
 }
 .children button.minus {
-	margin-left: 25px;
+	margin-left: 20px;
 }
 
 

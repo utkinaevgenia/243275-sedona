@@ -56,20 +56,21 @@
           <div class="price">
             <h2>Стоимость в сутки (р):</h2>
             <div class="price-range">
-              <label>От 0
-                <input type="text" name="price-min">
+              <label class="min-price">От
+                <input type="text" name="price-min" value="0">
               </label>
-              <label>До 3000
-                <input type="text" name="price-max">
+              <label class="max-price">До
+                <input type="text" name="price-max" value="3000">
               </label>
             </div>
-            <div class="range">
-              <div class="range-active">
-                <button class="range-circle range-circle-left" type="button"></button>
-                <button class="range-circle range-circle-right" type="button"></button>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
+              <div class="range-circle range-circle-min"></div>
+              <div class="range-circle range-circle-max"></div>
             </div>
-            <button class="price-show" type="submit"> Показать </button>
+            <button class="price-show" type="submit">Показать</button>
           </div>
         </form>
       </div>
