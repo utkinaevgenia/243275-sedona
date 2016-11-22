@@ -7,17 +7,14 @@ body {
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
-.main {
-	background-color: #ffffff;
-}
 .main-container {
 	width: 1200px;
 	margin: 0 auto;
 	box-shadow: -15px 0 30px -20px #333, 
 	15px 0 30px -20px #333;
 }
-.main-header {
-	background: #ffffff;
+.main-navigation {
+	background-color: #ffffff;
 }
 .main-navigation li {
 	display: block;
@@ -83,6 +80,9 @@ body {
 	display: block;
 }
 .main-logo {
+	background-color: #ffffff;
+}
+.main {
 	background-color: #ffffff;
 }
 .main-footer {
@@ -177,7 +177,7 @@ body {
 }
 .footer-copyright {
 	float: right;
-	padding-top: 15px;
+	padding-top: 10px;
 	width: 220px;
 	margin-right: 20px;
 	position: relative;
@@ -225,10 +225,11 @@ body {
 	font-weight: bold;
 	margin-top: 0;
 	margin-left: -10px;
+	margin-bottom: 9px;
 }
 .main-condition {
-	min-height: 220px;
-	background: #f2f2f2 url("../img/inner-filter.jpg") no-repeat;
+	min-height: 218px;
+	background: #ffffff url("../img/inner-filter.jpg") no-repeat;
 	clear: both;
 	background-position-y: -50px;
 }
@@ -347,7 +348,7 @@ input[type="checkbox"]:checked:disabled + label.choice::before {
 	text-align: right;
 	margin: 0;
 	display: inline-block;
-	padding: 4px 0;
+	padding: 5px 0;
 }
 .price-range input {
 	width: 47%;
@@ -431,11 +432,12 @@ button.price-show:active {
 	padding-left: 70px;
 	font-weight: bold;
 	font-size: 21px;
+	line-height: 26px;
 }
 .sort {
 	float: left;
 	width: 580px;
-	padding: 10px;
+	padding: 12px;
 	margin: 20px 0 0 0;
 	font-size: 12px;
 }
@@ -455,7 +457,7 @@ ul.filter-sort {
 	margin-right: 30px;
 }
 .filter-sort li:first-child {
-	margin-left: 30px;
+	margin-left: 35px;
 }
 .filter-sort a {
 	text-decoration: none;
@@ -494,6 +496,7 @@ ul.filter-sort {
 }
 .direction-filter.down {
 	margin-right: 70px;
+	padding-top: 35px;
 }
 a.direction-filter {
 	font-size: 0px;
@@ -546,8 +549,7 @@ a.direction-filter {
 }
 .hotel {
 	width: 1060px;
-	padding: 30px 70px;
-	margin: 1px 0;
+	padding: 29px 70px;
 }
 .hotel img {
 	float: left;
@@ -561,10 +563,12 @@ a.direction-filter {
 	font-size: 21px;
 	font-weight: bold;
 	margin: 0px;
+	margin-top: -2px;
 }
 .hotel-character a {
 	text-decoration: none;
-	color: #000000
+	color: #000000;
+	vertical-align: text-top;
 }
 .hotel-character a:hover {
 	color: #89b8d5;
@@ -577,7 +581,7 @@ a.direction-filter {
 }
 .hotel-character span {
 	display: inline-block;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-right: 5px;
 	width: 110px;
 }
@@ -625,7 +629,7 @@ a.direction-filter {
 	width: 17px;
 	height: 17px;
 	background: url("../img/star.png") no-repeat;
-	margin: 0 2px;
+	margin-left: 4px;
 }
 .star {
 	text-align: right;
@@ -639,13 +643,13 @@ h2.offer-title {
 	line-height: 24px;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 58px;
 	margin: 0;
 }
 .offer-name {
 	color: #696969;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 48px;
 	margin-top: 30px;
 	line-height: 24px;
 }
@@ -660,7 +664,7 @@ h1.logo-title {
 	text-align: center;
 	margin: 0 auto;
 	padding-top: 60px;
-	padding-bottom: 30px;
+	padding-bottom: 27px;
 }
 .features-title {
 	display: block;
@@ -678,7 +682,7 @@ h1.logo-title {
 .features-items p {
 	text-align: center;
 	color: #ffffff;
-	margin: 25px 0;
+	margin: 23px 0;
 }
 .features-items-small p.features {
 	text-align: center;
@@ -709,10 +713,13 @@ h1.logo-title {
 }
 .features-logo-name {
 	display: block;
-	margin-top: 30px;
+	margin-top: 27px;
 	margin-bottom: 25px;
 	font-size: 21px;
 	font-weight: bold;
+}
+.features-logo-wrapped {
+	background-color: #ffffff;
 }
 .features-logo.accomodation:before {
 	content: "";
@@ -725,7 +732,7 @@ h1.logo-title {
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	top: 60px;
+	top: 62px;
 }
 .features-logo.food:before {
 	content: "";
@@ -738,7 +745,7 @@ h1.logo-title {
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	top: 60px;
+	top: 62px;
 }
 .features-logo.souvenirs:before {
 	content: "";
@@ -751,7 +758,7 @@ h1.logo-title {
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	top: 60px;
+	top: 58px;
 }
 .features-items-small .features-name {
 	margin: 0;
@@ -771,8 +778,8 @@ h1.logo-title {
 	float: left;
 	text-align: center;
 	width: 280px;
-	padding: 50px 60px;
-	padding-bottom: 60px;
+	padding: 48px 60px;
+	padding-bottom: 58px;
 	background-color: #eeeeee;
 }
 p.feature {
@@ -828,13 +835,13 @@ input.offer {
 .group {
 	width: 455px;
 	margin: 0 auto;
-	padding-top: 30px;
+	padding-top: 28px;
 }
 label.date {
 	display: block;
 	width: 455px;
 	margin: 0 auto;
-	padding-top: 30px;
+	padding-top: 28px;
 	font-weight: bold;
 	line-height: 26px;
 }
