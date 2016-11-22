@@ -847,12 +847,13 @@ label.date {
 }
 .adult {
 	display: inline-block;
-	padding-right: 49px;
+	float: left;
 	font-weight: bold;
 	line-height: 26px;
 }
 .children {
 	display: inline-block;
+	float: right;
 	font-weight: bold;
 	line-height: 26px;
 }
@@ -877,11 +878,16 @@ button.submit:active {
 	background-color: #5496bd;
 	color: #88b6d1;
 }
+.date span {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+}
 input.date {
+	float: right;
 	width: 340px;
 	height: 34px;
 	background: #f2f2f2 url("../img/calendar.png") no-repeat 97% center;
-	margin-left: 19px;
 	line-height: 26px;
 	font-weight: bold;
 	outline: none;
