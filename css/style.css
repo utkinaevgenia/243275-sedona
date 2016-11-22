@@ -897,9 +897,6 @@ input.date {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 }
-input.date.checkout {
-	margin-left: 15px;
-}
 input.date:hover {
 	background: #ebebeb url("../img/calendar-hover.png") no-repeat 97% center;
 	outline: none;
