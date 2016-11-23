@@ -78,6 +78,7 @@ body {
 }
 .main-logo img {
 	display: block;
+	background-color: #93bed9;
 }
 .main-logo {
 	background-color: #ffffff;
@@ -229,7 +230,7 @@ body {
 }
 .main-condition {
 	min-height: 218px;
-	background: #ffffff url("../img/inner-filter.jpg") no-repeat;
+	background: #3e739e url("../img/inner-filter.jpg") no-repeat;
 	clear: both;
 	background-position-y: -50px;
 }
@@ -682,7 +683,8 @@ h1.logo-title {
 .features-items p {
 	text-align: center;
 	color: #ffffff;
-	margin: 23px 0;
+	margin: 23px auto;
+	width: 305px;
 }
 .features-items-small p.features {
 	text-align: center;
@@ -691,15 +693,29 @@ h1.logo-title {
 .features-items.right img {
 	float: right;
 	width: 800px;
+	background-color: #c7c6ce;
 }
 .feature {
 	color: #696969;
 }
-.features-items .features-name {
+.features-descriptions {
+	width: 400px;
+}
+.left .features-descriptions {
+	float: right;
+}
+.right .features-descriptions {
+	float: left;
+}
+.features-descriptions .features-name {
 	font-weight: bold;
 	margin-top: 55px;
 	font-size: 21px;
 	margin-bottom: 0;
+	width: 151px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 21px;
 }
 .features-logo {
 	float: left;
@@ -769,10 +785,14 @@ h1.logo-title {
 	font-size: 21px;
 	line-height: 21px;	
 	font-weight: bold;
+	width: 115px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .features-items.left img {
 	float: left;
 	width: 800px;
+	background-color: #e5ae96;
 }
 .features-items-small {
 	float: left;
@@ -784,7 +804,6 @@ h1.logo-title {
 }
 p.feature {
 	margin: 0;
-	/*min-height: 55px;*/
 }
 .offer {
 	background-color: #ffffff;
@@ -831,6 +850,7 @@ input.offer {
 }
 .map img {
 	display: block;
+	background-color: #e9e5dc;
 }
 .group {
 	width: 455px;
@@ -918,6 +938,16 @@ input.date:focus {
 	text-align: center;
 	outline: none;
 }
+.adult input:hover {
+	background-color: #ebebeb;
+	outline: none;
+	border: -1px solid #ebebeb;
+}
+.adult input:focus {
+	background-color: transparent;
+	border: 1px solid #e5e5e5;
+	outline: none;
+}
 .children input {
 	width: 38px;
 	height: 38px;
@@ -929,10 +959,20 @@ input.date:focus {
 	text-align: center;
 	outline: none;
 }
+.children input:hover {
+	background-color: #ebebeb;
+	outline: none;
+	border: -1px solid #ebebeb;
+}
+.children input:focus {
+	background-color: transparent;
+	border: 1px solid #e5e5e5;
+	outline: none;
+}
 button.minus, button.plus {
 	width: 38px;
 	height: 38px;
-	border: none;
+	border: 1px solid #f2f2f2;
 	font-size: 14px;
 	color: transparent;
 	line-height: 26px;
